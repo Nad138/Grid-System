@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 3px auto;
+}
+ .row:before, .row:after {
+    content: " ";
+    display: table;
+ }
+
+ .row:after {
+   clear: both;
+ }
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left;
+  border: 1px gray solid;
+
+}
+
+.col-1 {
+  /* (1/12)x 100 */
+  width: 8.333333%;
+}
+
+.col-2 {
+  /* (2/12)x 100 */
+  width: 16.666667%;
+}
+.col-3 {
+  /* (3/12)x 100 */
+  width: 25%;
+}
+
+.col-4 {
+  /* (4/12)x 100 */
+  width: 33.333333%;
+}
+
+.col-5 {
+  /* (5/12)x 100 */
+  width: 41.666667%;
+}
